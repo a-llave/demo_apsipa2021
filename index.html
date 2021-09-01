@@ -11,7 +11,7 @@
 		  gtag('config', 'UA-109046767-2');
 		</script>
 
-		<title>Localization cues preservation in hearing aids by combining noise reduction and dynamic range compression</title>
+		<title>On Speech Sparsity for Computational Efficiency and Noise Reduction in Hearing Aids</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
 		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
@@ -118,7 +118,7 @@
 						<!-- Audio -->
 						<span style="font-size: large;"><a name="audio"></a><strong>Audio examples</strong></span>
 						<hr>
-						<p>You can listen to audio examples of a auditory scene composed of a speech source and a cafeteria noise at a SNR of 5 dB.<p/>
+						<p>You can listen to audio examples of a auditory scene composed of three speech sources located on the horizontal plane at -45, 0 and 45°, respectively, and a cafeteria noise at a SNR of 5 dB.<p/>
 
 						<!-- </center> -->
 						<table style="font-size: 100%";>
@@ -127,7 +127,7 @@
 							<th>Original noise</th>
 						</tr>
 						<tr>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/original_speech.wav"></audio></td>
+							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Ideal.wav"></audio></td>
 							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/original_noise.wav"></audio></td>
 						</td>
 						</tr>
@@ -138,42 +138,22 @@
 						<tr>
 							<th></th>
 							<th>Speech location @ azimuth: 0°</th>
-							<th>Speech location @ azimuth: 30°</th>
 						</tr>
 						<tr>
-							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">Linear</td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az0/Linear.wav"></audio></td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az30/Linear.wav"></audio></td>
+							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">Original</td>
+							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Original.wav"></audio></td>
 						</tr>
 						<tr>
-							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">Independent DRC</td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az0/Independent.wav"></audio></td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az30/Independent.wav"></audio></td>
+							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">MVDR beamformer</td>
+							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_MVDR.wav"></audio></td>
 						</tr>
 						<tr>
-							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">Linked DRC</td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az0/Link.wav"></audio></td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az30/Link.wav"></audio></td>
+							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">LCMV beamformer</td>
+							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_LCMV.wav"></audio></td>
 						</tr>
 						<tr>
-							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">SNR-aware DRC (May et al. 2018)</td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az0/May18.wav"></audio></td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az30/May18.wav"></audio></td>
-						</tr>
-						<tr>
-							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">MWF-n + DRC</td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az0/MWF-N + DRC.wav"></audio></td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az30/MWF-N + DRC.wav"></audio></td>
-						</tr>
-						<tr>
-							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">Our</td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az0/Our.wav"></audio></td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az30/Our.wav"></audio></td>
-						</tr>
-						<tr>
-							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">Ideal</td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az0/Ideal.wav"></audio></td>
-							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/az30/Ideal.wav"></audio></td>
+							<td style="width=100%; text-align: right; vertical-align: middle; height: 39px;">Proposed beamformer</td>
+							<td style="width=100%; text-align: center; vertical-align: middle; height: 39px;"><audio style="width: 250px;" controls="controls" preload="none" src="demos/audio/stim_3_condition_Mix.wav"></audio></td>
 						</tr>
 						</table>
 						<!-- Acknowledgement -->
