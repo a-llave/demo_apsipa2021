@@ -110,8 +110,16 @@
 						<tr>
 						<td style="width: 50%; text-align: justify; vertical-align: top;">
 							Beamforming techniques are widely used in hearing aids to improve the signal-to-noise ratio. In a multi-speaker scenario, it is common to assume that the speech signals associated with each speaker do not overlap in the time-frequency domain. This so-called W-disjoint orthogonality assumption allows us to reduce the complexity of the beamforming algorithm. However, its validity decreases in presence of more than two speakers. In this study, we propose a beamforming algorithm relying on a less restrictive assumption regarding the sparsity of speech signals in the time-frequency domain. Its implications over the noise reduction performance and the computational complexity are discussed and compared with the Linearly Constrained Minimum Variance (LCMV) and the Minimum Variance Distortionless Response (MVDR) beamformers. We show that the proposed algorithm improves the noise reduction performance and reduces the computational cost compared to the LCMV beamformer without increasing the artifacts amount unlike the MVDR beamformer. </td>
-						<td style="width: 2%; text-align: justify;"></td>
-						<td style="width: 48%; text-align: center;"><img class="wp-image-7444 aligncenter" src="demos/our_algo_combo.png" alt="" width="550" /></a></td>
+						<td style="width: 2%; text-align: justify;">
+							<!-- EMPTY -->
+						</td>
+						<td style="width: 48%; text-align: justify;">
+							<img class="wp-image-7444 aligncenter" src="demos/documents/example_nbsrc3_overlap.png" alt="" width="500" /></a>
+							Example of the number of active sources in the STFT domain for a mixture of 3 sentences.
+
+							<img class="wp-image-7444 aligncenter" src="demos/documents/dsdr_vs_nbp_nbstim40.png" alt="" width="500" /></a>
+							SDR improvement versus computational complexity averaged over the examples for an SNR of 0 dB. The ellipses show the standard deviation isovalue of a 2D gaussian distribution fitted over the results for the proposed algorithm with the VAD threshold ranging from -5 to 9 dB with a 2 dB step.
+						</td>
 						</tr>
 						</table>
 
